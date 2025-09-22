@@ -1,0 +1,186 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background: url("bg-desktop-light.jpg") no-repeat center top / cover;
+  color: aliceblue;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+main {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  container-type: inline-size;
+}
+
+
+/* Container */
+#container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+.inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.in {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.night {
+  cursor: pointer;
+}
+.night:hover {
+  transform: rotate(45deg);
+  
+}
+
+/* Input Area */
+.todo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 2px;
+
+  padding: 10px;
+  margin-bottom: 20px;
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.2); */
+}
+
+.txt {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  color: rgb(1, 3, 5);
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.txt::placeholder {
+  color: rgba(40, 39, 39, 0.6);
+}
+
+#icon {
+  font-size: 1.5rem;
+  color: rgba(56, 56, 58, 0.559);
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+#icon:hover {
+  color: #00c8ff;
+  transform:  rotate(180deg);
+}
+
+/* Todo List */
+.todo2 {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.925);
+  border-radius: 2px;
+  padding: 20px;
+  backdrop-filter: blur(6px);
+  
+}
+
+.todo2 ul {
+  list-style: none;
+}
+
+.todo2 li {
+  color: rgb(52, 52, 52);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background: rgb(148, 147, 147,0.2);
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.todo2 li:hover {
+cursor:pointer;
+  transform: translateY(-2px);
+}
+
+/* Actions (check + delete) */
+.todo2 li .actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.todo2 li .actions i {
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+.todo2 li .actions i:hover {
+  transform: scale(1.2);
+}
+
+/* Delete button */
+.delete {
+  color: #343333;
+  
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 50%;
+   transition: all 0.3s ease;
+}
+.delete:hover {
+
+  color: #f24d30;
+  transform: scale(1.2);
+}
+
+/* Check button */
+.checkbox {
+  margin-left: auto;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+.checkbox:hover {
+  color: #00ffaa;
+  transform: scale(1.2);
+}
+li{
+  font-size: 1.5rem;
+  color: rgb(239, 237, 242);
+}
+#animation .text-xl {
+  font-size: 1.5rem;
+  color: currentColor;
+  letter-spacing: 0.06em;
+}
+
